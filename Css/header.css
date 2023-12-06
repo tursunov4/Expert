@@ -1,35 +1,63 @@
 @keyframes animatebird {
 from {
-    background-image: url("../Images/headercloud.webp"),url("../Images/headerbird.webp"), url("../Images/люди.webp"),url("../Images/headerback1.webp") , url("../Images/headercloud.webp");
-    background-size:cover , 201px 213px,600px 700px , cover ;
-    background-position-x: center,calc(50% - 740px),calc(50% + 320px), center ;
-    background-position-y: calc(50% + 300px) ,calc(50% - 200px),bottom,center ;
+    background-image: url("../Images/headercloud.webp"), url("../Images/tree.webp"),url("../Images/headerbird.webp"), url("../Images/люди.webp"),url("../Images/headerback1.webp") , url("../Images/headercloud.webp");
+    background-size:cover , auto,201px 213px,600px 700px , cover ;
+    background-position-x: center,  calc(50% - 800px),calc(50% - 740px),calc(50% + 320px), center ;
+    background-position-y: calc(50% + 300px), bottom ,calc(50% - 200px),bottom,center ;
 }to{
-    background-image: url("../Images/headercloud.webp"),url("../Images/headerbird.webp"), url("../Images/люди.webp"),url("../Images/headerback1.webp") , url("../Images/headercloud.webp");
-    background-size:cover , 201px 213px,600px 700px , cover ;
-    background-position-x: center,calc(50% - 720px),calc(50% + 300px), center ;
-    background-position-y: calc(50% + 350px) ,calc(50% - 200px),bottom,center ;
+    background-image: url("../Images/headercloud.webp"), url("../Images/tree.webp"),url("../Images/headerbird.webp"), url("../Images/люди.webp"),url("../Images/headerback1.webp") , url("../Images/headercloud.webp");
+    background-size:cover ,auto, 201px 213px,600px 700px , cover ;
+    background-position-x: center, calc(50% - 800px),calc(50% - 720px),calc(50% + 300px), center ;
+    background-position-y: calc(50% + 350px),bottom ,calc(50% - 200px),bottom,center ;
 }
-    
+  
+
 }
 .header-section{
     position: relative;
     padding: 38px 0 335px 0;
-    background-image: url("../Images/headercloud.webp"),url("../Images/headerbird.webp"), url("../Images/люди.webp"),url("../Images/headerback1.webp") , url("../Images/headercloud.webp");
-    background-size:cover , 201px 213px,600px 700px , cover ;
-    background-position-x: center,calc(50% - 720px),calc(50% + 300px), center ;
-    background-position-y: calc(50% + 350px) ,calc(50% - 200px),bottom,center ;
+    background-image: url("../Images/headercloud.webp"), url("../Images/tree.webp") ,url("../Images/headerbird.webp"), url("../Images/люди.webp"),url("../Images/headerback1.webp") , url("../Images/headercloud.webp");
+    background-size:cover , auto, 201px 213px,600px 700px , cover ;
+    background-position-x: center, left,calc(50% - 720px),calc(50% + 300px), center ;
+    background-position-y: calc(50% + 350px), bottom ,calc(50% - 200px),bottom,center ;
     background-repeat: no-repeat;
-    animation-name: animatebird;
-   
+    animation-name: animatebird;   
     animation-duration: 2s;
 }
+
+@media only screen and (max-width:1600px){
+    .header-section{
+        position: relative;
+        padding: 38px 0 335px 0;
+        background-image: url("../Images/headercloud.webp"), url("../Images/tree.webp") ,url("../Images/headerbird.webp"), url("../Images/люди.webp"),url("../Images/headerback1.webp") , url("../Images/headercloud.webp");
+        background-size:cover , auto, 201px 213px,600px 700px , cover ;
+        background-position-x: center, calc(50% - 800px),calc(50% - 720px),calc(50% + 300px), center ;
+        background-position-y: calc(50% + 350px), bottom ,calc(50% - 200px),bottom,center ;
+    }
+}
+
 
 .header-wrapper{
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     margin-bottom: 120px;
+}
+
+@keyframes videoplay {
+    0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+
+}
+.header__video-img{
+   animation: videoplay 2s infinite linear;
 }
 .header-logo{
     width: 269px;
@@ -77,19 +105,21 @@ color: #000000;
     justify-content: flex-start;
 }
 .header-hero__text-p{
-font-size: 90px;
+font-size: 80px;
 font-style: normal;
 text-align: left;
 color: #000000;
+font-weight: 400;
 }
 .header-hero__text-i{
 margin-bottom: 40px;
-font-size: 80px;
+font-size: 70px;
 font-weight: undefined;
 text-align: left;
 line-height: 70px;
 color: #2399B6;
 display: block;
+font-weight: 300;
 }
 .header-hero__more{
     position: relative;
@@ -116,7 +146,8 @@ color: #000000;
     border-radius: 4px;
 }
 .header-hero__btn:hover{
-    background: linear-gradient( 180deg, #E2AC38,#FADF62);
+    transform: scale(1.05);
+    transition: all 0.5s;
 }
 .header__video{
     position: absolute;
@@ -136,12 +167,27 @@ font-style: normal;
 text-align: right;
 color: #000000;
 }
+.anap-list__item:hover .anap-list__text {
+    color: #000000;
+    border-bottom: 2px solid #000000;
+}
+.anap-list__item:hover .anap-list__text {
+    color: #000000;
+    border-bottom: 2px solid #000000;
+}
+.anap-list__item:hover img{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+
+
 
 @media only screen and (max-width:1060px){
     .header-section{     
-        background-size:cover , 201px 213px,600px 700px , cover ;
-        background-position-x: center,calc(50% - 720px),calc(50% + 240px), center ;
-        background-position-y: calc(50% + 350px) ,calc(50% - 200px),bottom,center ;
+        background-size:cover , auto,201px 213px,600px 700px , cover ;
+        background-position-x: center, calc(50% - 800px),calc(50% - 720px),calc(50% + 240px), center ;
+        background-position-y: calc(50% + 350px), bottom ,calc(50% - 200px),bottom,center ;
         animation: none;
     }
     .header__video{
@@ -153,9 +199,9 @@ color: #000000;
 }
 @media only screen and (max-width:880px){
     .header-section{     
-        background-size:cover , 201px 213px,450px 571px , cover ;
-        background-position-x: center,calc(50% - 720px),calc(50% + 240px), center ;
-        background-position-y: calc(50% + 350px) ,calc(50% - 200px),bottom,center ;
+        background-size:cover , auto, 201px 213px,450px 571px , cover ;
+        background-position-x: center, calc(50% - 800px),calc(50% - 720px),calc(50% + 240px), center ;
+        background-position-y: calc(50% + 350px),bottom ,calc(50% - 200px),bottom,center ;
     }  
     .header__video-img{
         width: 177px;
@@ -213,9 +259,9 @@ color: #000000;
         padding: 19px 0 540px 0;
     }
     .header-section{     
-        background-size:cover , 201px 213px,360px 490px , cover ;
-        background-position-x: center,calc(50% - 720px),center, center ;
-        background-position-y: calc(50% + 332px) ,calc(50% - 200px),bottom,center ;
+        background-size:cover ,  auto,201px 213px,360px 490px , cover ;
+        background-position-x: center, calc(50% - 800px),calc(50% - 720px),center, center ;
+        background-position-y: calc(50% + 332px) , bottom ,calc(50% - 200px),bottom,center ;
     }     
     .header__video-img{
         width: 177px;
@@ -237,9 +283,9 @@ color: #000000;
 @media only screen and (max-width:620px){
 
     .header-section{     
-        background-size:cover , 201px 213px,360px 490px , cover ;
-        background-position-x: center,calc(50% - 720px),center, center ;
-        background-position-y: calc(50% + 363px) ,calc(50% - 200px),bottom,center ;
+        background-size:cover , auto,201px 213px,360px 490px , cover ;
+        background-position-x: center,  calc(50% - 800px),calc(50% - 720px),center, center ;
+        background-position-y: calc(50% + 363px) bottom, calc(50% - 200px),bottom,center ;
     } 
     .header__video{
         position: absolute;
@@ -295,3 +341,4 @@ color: #000000;
 height: 64px;   
     }
 }
+

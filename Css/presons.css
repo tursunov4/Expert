@@ -1,9 +1,9 @@
 .persons-section{
     padding: 148px 0 217px 0;
     background-image: url("../Images/preponsluydi.webp") , url("../Images/personsfon2.png")  ;
-    background-position-x:  calc(50% + 300px), center ;
+    background-position-x:  calc(50% + 350px), center ;
     background-position-y:  bottom,center ;
-    background-size: 740px 600px ,cover ;
+    background-size: 790px 650px ,cover ;
     background-repeat: no-repeat;
 }
 .presons-section__wrapper{
