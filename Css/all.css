@@ -4,7 +4,9 @@
     src: url("../Fonts/VremenaGroteskMedium.otf");
   }
 
-
+body{
+    font-family: "Verdan Medium", sans-serif;
+}
 *{
     margin: 0;
     padding: 0;
