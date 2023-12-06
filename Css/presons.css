@@ -22,10 +22,11 @@ color: #000000;
 
 }
 
-.persons-seciton__title i{
+.persons-seciton__title  span{
     font-size: 47px;
     line-height: 47px;
-    color: #2399B6;
+    color: #2399B6 !important;
+    font-style: italic;
 }
 .persons-section__text{
  max-width: 600px;
@@ -60,7 +61,7 @@ color:#A09F9F;
         font-size: 40px;
 
     }
-    .persons-seciton__title i{
+    .persons-seciton__title  span{
         font-size: 37px;
         line-height: 37px;
     }
@@ -93,7 +94,7 @@ color:#A09F9F;
         font-size: 30px;
 
     }
-    .persons-seciton__title i{
+    .persons-seciton__title span{
         font-size: 27px;
         line-height: 27px;
     }
